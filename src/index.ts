@@ -38,6 +38,7 @@ if (cluster.isPrimary) {
         if (results.length <= 0) {
             res.status(400).json({ status: false, data: results })
         }
+        res.status(200).json({ status: true, data: results })
     })
 
 
